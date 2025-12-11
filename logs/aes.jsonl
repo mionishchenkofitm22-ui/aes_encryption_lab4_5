@@ -1,0 +1,12 @@
+{"ts": "2025-12-11T06:41:21Z", "level": "INFO", "msg": "enc", "mode": "GCM", "in": "README.md", "out": "outputs/test.enc", "sec": 0.0009, "taglen": 16}
+{"ts": "2025-12-11T06:45:35Z", "level": "INFO", "msg": "enc", "mode": "GCM", "in": "README.md", "out": "outputs/attack_test.enc", "sec": 0.0012, "taglen": 16}
+{"ts": "2025-12-11T06:45:48Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/attack_test.enc", "out": "outputs/attack_test.dec", "sec": 0.0001, "ok": false, "error": "Expecting value: line 1 column 15 (char 14)"}
+{"ts": "2025-12-11T06:46:45Z", "level": "INFO", "msg": "enc", "mode": "GCM", "in": "README.md", "out": "outputs/gcm_ok.enc", "sec": 0.0008, "taglen": 16}
+{"ts": "2025-12-11T06:47:52Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/gcm_ok.enc", "out": "outputs/gcm_corrupted.dec", "sec": 0.0001, "ok": false, "error": "Invalid control character at: line 1 column 45 (char 44)"}
+{"ts": "2025-12-11T06:49:03Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/gcm_ok.enc", "out": "outputs/gcm_corrupted.dec", "sec": 0.0001, "ok": false, "error": "Invalid control character at: line 1 column 45 (char 44)"}
+{"ts": "2025-12-11T06:54:24Z", "level": "INFO", "msg": "enc", "mode": "GCM", "in": "README.md", "out": "outputs/tamper_gcm.enc", "sec": 0.0008, "taglen": 16}
+{"ts": "2025-12-11T06:54:30Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/tamper_gcm.enc", "out": "outputs/tamper_gcm.dec", "sec": 0.001, "ok": true, "error": ""}
+{"ts": "2025-12-11T06:56:48Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/tamper_gcm.enc.tampered", "out": "outputs/tamper_gcm_tampered.dec", "sec": 0.0007, "ok": false, "error": ""}
+{"ts": "2025-12-11T06:59:39Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/tamper_gcm.enc", "out": "outputs/tamper_fixed_test.dec", "sec": 0.0021, "ok": false, "error": ""}
+{"ts": "2025-12-11T07:00:17Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/tamper_gcm.enc", "out": "outputs/tamper_fixed_test.dec", "sec": 0.0011, "ok": false, "error": ""}
+{"ts": "2025-12-11T07:09:00Z", "level": "INFO", "msg": "dec", "mode": "GCM", "in": "outputs/tamper_gcm.enc", "out": "outputs/tamper_fixed_test.dec", "sec": 0.0011, "ok": false, "error": "InvalidTag: "}

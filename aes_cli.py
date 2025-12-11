@@ -50,7 +50,7 @@ def cmd_dec(args):
         err = ''
     except Exception as e:
         ok = False
-        err = str(e)
+        err = f"{type(e).__name__}: {e}"
     dt = time.perf_counter() - t0
     logger.info('dec', extra={'extra': {'mode': MODES[args.mode], 'in': args.infile, 'out': args.outfile, 'sec': round(dt,4), 'ok': ok, 'error': err}})
     if ok:
